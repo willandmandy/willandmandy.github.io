@@ -1,0 +1,148 @@
+/* General Site Formatting */
+* {
+	  font-family: Roboto, sans-serif;
+      }
+
+h1 {
+	  text-align:center;
+	  margin-top: 0;
+	  font-family: "Playfair Display", serif;
+}
+h2 {
+	  margin-top: 1.75em;
+	  font-family: "Playfair Display", serif;
+      }
+
+.main {
+	  border-radius: 25px;
+	 background-color: white;
+	  padding: 2em 8%;
+	  margin: 5em 25%;
+	  font-family: Roboto, sans-serif;
+	  font-size: 1.25em;
+      }
+
+
+body {
+	  background-color: #38050F;
+	  //#F3EFE0;
+      }
+
+/* Header */
+      
+#header {
+	  text-align: center;
+	  font-size: 50pt;
+	  font-family: Tangerine, serif;
+	 // font-family: "Playfair Display", Arial;
+	 margin-top: 1.5em;
+	color: #68707C;
+      }
+
+#header img {
+	  height: 80px;
+	  width: 70%;
+	  max-width: 300px;
+	
+}
+
+#ampersand {
+	  font-family: "Playfair Display";
+	  font-style: italic;
+	  font-size: 45pt;
+	  
+      }
+
+
+/* Navigation Bar */      
+
+      #nav {
+	  text-align: center;
+	  padding: 1.5em 0 6.5em 0
+	  }
+
+      #nav a {
+	  padding: 12px;
+	  text-decoration: none;
+	  font-size: 12pt;
+	  transition: .3s;
+	  color: black;
+      }
+
+      #nav a:visited {
+	  color: black;
+      }
+
+      #nav a:hover {
+	  font-weight: bold;
+      }
+
+/* Image Gallery */
+
+      .gallery {
+	  width: 100%;
+	  max-width: 1000px;
+	  position: relative;
+	  margin-top: 3em;
+      }
+
+      .slide img {
+	  width: 100%;
+      }
+
+      .slide {
+	  display: none;
+      }
+	  
+      .caption {
+	  color: #f2f2f2;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+      }
+
+      .prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  border-radius: 0 8px 8px 0;
+	  user-select: none;
+	  transition: 0.5s ease;
+      }
+
+      .next {
+	  right: 0;
+	  border-radius: 8px 0 0 8px !important;
+      }
+
+      .prev:hover, .next:hover {
+	  background-color: black;
+      }
+
+      /* Picture Fade... a little messy */
+      
+      .fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+	  from {opacity: .3}
+	  to {opacity: 1}
+      }
+
+      @keyframes fade {
+	  from {opacity: .3}
+	  to {opacity: 1}
+      }
+      

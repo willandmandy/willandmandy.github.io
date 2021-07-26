@@ -1,0 +1,116 @@
+<html>
+  <meta name="robots" content="noindex">
+  <head>
+    <title>Will & Mandy Best Wedding Ever</title>
+
+   <!-- "Playfair" Font -- Sort of a stylized but still professional serif; Roboto = Simple sans; Tangerine = cursive-y but not hyper Victorian Effeminate like Edwardian -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wedding.css">
+      
+  </head>
+  <body>
+    <div class="main">
+      <div id="header">
+	William &nbsp;&nbsp;<span id="ampersand"> & </span>&nbsp; Amanda
+	<center><img src="Flourish.gif"></center>
+      </div>
+      <div id="nav">
+	<a href="index.html">Home</a>
+	<a href="rsvp.html">RSVP</a>
+	<a href="registry.html">Gifts</a>
+	<a href="travel.html">Travel</a>
+	<a href="venue.html">Venue</a>
+	<a href="our_story.html" target="_blank">Our Story</a>
+      
+      </div>
+      <h1>American Creek Lodge</h1>
+
+      <h2>Google Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662384.5718253356!2d-121.8769572521275!3d49.579950414420345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5483f6957c205961%3A0x1cc8090adbfdf771!2sAmerican%20Creek%20Lodge!5e0!3m2!1sen!2sca!4v1627110830487!5m2!1sen!2sca" width="100%" height="75%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="gallery">
+	<h2>Images of the Venue</h2>
+      <!-- Gallery Images -->
+      
+      <div class="slide fade">
+	<img src="photos/aerial.jpg" alt="1">
+	<div class="caption">Aerial View</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/front.jpg" alt="2">
+	<div class="caption">Front</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/rear.jpg" alt="3">
+	<div class="caption">Rear</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/deck.jpg" alt="4">
+	<div class="caption">Ceremony Deck</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/entry.jpg" alt="5">
+	<div class="caption">Entryway</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/living.jpg" alt="6">
+	<div class="caption">Main Floor</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/kitchen.jpg" alt="7">
+	<div class="caption">Kitchen</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/reception.jpg" alt="8">
+	<div class="caption">Reception Area</div>
+      </div>
+
+      <div class="slide fade">
+	<img src="photos/rear2.jpg" alt="9">
+	<div class="caption">Reception Rear</div>
+      </div>
+
+      
+
+      <!-- Nav Buttons -->
+      <a class="prev" onclick="imgScroll(-1)">&#10094;</a>
+      <a class="next" onclick="imgScroll(1)">&#10095;</a>
+
+      </div>
+
+
+    </div>
+
+      
+  </body>
+
+  <script>
+    var imgIndex = 1;
+    imgShow(imgIndex);
+
+    function imgScroll(n) {
+	imgShow(imgIndex += n);
+    }
+
+    function imgShow(n) {
+	var x;
+	var slides = document.getElementsByClassName("slide");
+	if (n > slides.length) {imgIndex = 1}
+	if (n < 1) {imgIndex = slides.length}
+	for (x = 0; x < slides.length; x++) {
+	    slides[x].style.display = "none";
+	}
+	slides[imgIndex-1].style.display = "block";
+    }
+  </script>
+  
+    
+    
+</html>
