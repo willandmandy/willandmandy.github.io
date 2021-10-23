@@ -8,16 +8,6 @@
       margin: 15px 25%;
   }
 
-  /* Formatting for the flourish idea
-  img {
-      width: 65%;
-      height: 1.5em;
-      display: block;
-      margin: auto;
-      padding-bottom: 2em;
-  }
- */
-
   hr {
       border: 1px solid #801010;
       margin: 0 1em 2em 1em;
@@ -54,6 +44,13 @@
 	background-size: contain;
 	min-height: 90%;
 }
+	
+	@media screen and (max-width: 750px) {
+		.bgimage1, .bgimage2, .bgimage3, .bgimage4 {
+			background-size: cover;
+		}
+	}
+	
 .bgimage1 {
 	background-image: url("usx.jpg");
 	min-height: 125%;
