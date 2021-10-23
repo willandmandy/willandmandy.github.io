@@ -23,7 +23,11 @@ h2 {
 	  font-family: Roboto, sans-serif;
 	  font-size: 1.25em;
       }
-
+@media screen and (max-width: 650px) {
+	.main {
+		width: 90%;
+	}
+}
 
 body {
 	  background-color: #38050F;
