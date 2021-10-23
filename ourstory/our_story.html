@@ -45,12 +45,6 @@
 	min-height: 90%;
 }
 	
-	@media screen and (max-width: 750px) {
-		body {
-			margin: 15px 5%;
-		}
-	}
-	
 .bgimage1 {
 	background-image: url("usx.jpg");
 	min-height: 125%;
@@ -165,11 +159,12 @@
 
 /* Disable Parallax for Mobile */
 
-@media only screen and (max-device-width: 1024px) {
-	.bgimage1, .bgimage2, .bgimage3, .bgimage4 {
-		background-attachment: scroll;
-		}
+@media only screen and (max-device-width: 700px) {
+	body {
+		margin: 15px 5%;
 	}
+	}
+	
 
 </style>
 </head>
